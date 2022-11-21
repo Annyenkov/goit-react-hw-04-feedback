@@ -1,4 +1,6 @@
-export const FeedbackOptions = ({options, onLeaveFeedback}) => {
+import PropTypes from 'prop-types'
+
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
       {options.map(option => {
@@ -16,11 +18,8 @@ export const FeedbackOptions = ({options, onLeaveFeedback}) => {
   )
 }
 
-// (
-//     <section>
-//       <h2>Please leave feedback</h2>
-//       <button>Good</button>
-//       <button>Neutral</button>
-//       <button>Bad</button>
-//     </section>
-//   )
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
+}
+
+export default FeedbackOptions

@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types'
 import Notification from "components/Notification"
+import { List, ListItem } from './Statistics.styled'
 
 const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
   return (
     <>
       {total ? (
-        <ul>
-        <li>Good: { good }</li>
-        <li>Neutral: { neutral }</li>
-        <li>Bad: { bad }</li>
-        <li>Total: { total }</li>
-        <li>Positive feedback: { positivePercentage }%</li>
-      </ul>
+        <List>
+        <ListItem>Good: { good }</ListItem>
+        <ListItem>Neutral: { neutral }</ListItem>
+        <ListItem>Bad: { bad }</ListItem>
+        <ListItem>Total: { total }</ListItem>
+        <ListItem>Positive feedback: { positivePercentage }%</ListItem>
+      </List>
       ) : (
           <Notification message="There is no feedback"/>
       )}

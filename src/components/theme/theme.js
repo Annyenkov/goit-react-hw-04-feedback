@@ -1,13 +1,9 @@
 export const theme = {
   colors: {
     text: '#000',
-    secondaryText: 'grey',
-    inverseText: '#fff',
-    bgd: '#fff',
-    secondaryBgd: '#f2f2f2;',
-    success: '#68e36f',
-    failure: '#f55742',
-    accent: '#42c5f5',
+    secondaryText: '#fff',
+    accent: '#5e34f9',
+    bg: '#fff',
   },
   fontSizes: {
     xs: '12',

@@ -7,7 +7,7 @@ class App extends Component {
   state = {
     good: 0,
     neutral: 0,
-    bad: 0,
+    bad: 1,
   };
 
   onLeaveFeedback = (option) => {
